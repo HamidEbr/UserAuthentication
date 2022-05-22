@@ -1,0 +1,45 @@
+{
+	"Routes": [
+		{
+			"DownstreamPathTemplate": "/authentication/register",
+			"DownstreamScheme": "https",
+			"DownstreamHttpMethod": "post",
+			"RouteIsCaseSensitive": true,
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 7038
+				}
+			],
+			"UpstreamPathTemplate": "/api/authentication/register",
+			"UpstreamHttpMethod": [ "post" ],
+			"QoSOptions": {
+				"ExceptionsAllowedBeforeBreaking": 2,
+				"DurationOfBreak": 10000,
+				"TimeoutValue": 2000
+			}
+		},
+		{
+			"DownstreamPathTemplate": "/get-user/{id}",
+			"DownstreamScheme": "https",
+			"DownstreamHttpMethod": "get",
+			"RouteIsCaseSensitive": true,
+			"DownstreamHostAndPorts": [
+				{
+					"Host": "localhost",
+					"Port": 7038
+				}
+			],
+			"UpstreamPathTemplate": "/get-user/{id}",
+			"UpstreamHttpMethod": [ "get" ],
+			"QoSOptions": {
+				"ExceptionsAllowedBeforeBreaking": 2,
+				"DurationOfBreak": 10000,
+				"TimeoutValue": 2000
+			}
+		}
+	],
+	"GlobalConfiguration": {
+		"BaseUrl": "https://localhost:7247"
+	}
+}
