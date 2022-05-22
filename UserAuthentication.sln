@@ -16,6 +16,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserAuthentication.Tests", "tests\UserAuthentication.Tests\UserAuthentication.Tests.csproj", "{0F24E57D-34B4-46D7-AE7D-939A8E99E8F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{71286B45-B7A6-44C6-B4CA-0B2E9721F2C2}"
+	ProjectSection(SolutionItems) = preProject
+		docs\نکات و مواردی که فرصت کافی برای پیاده سازی نبود.docx = docs\نکات و مواردی که فرصت کافی برای پیاده سازی نبود.docx
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D8D61C7F-1A7D-48FA-8F7B-D5C8B7A46128}"
 EndProject
